@@ -26,7 +26,7 @@ def maker(img):
     pixels = img.getdata()
 
 # replace each pixel with a character from array
-    chars = [".","S","#","&","@","$","%","*","!",":","."]
+    chars = [" ","S","#","&","@","$","%","*","!",":"," "]
     new_pixels = [chars[pixel//25] for pixel in pixels]
     new_pixels = ''.join(new_pixels)
 
